@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upcoming Cars</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background: #003c8f;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #003c8f;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .car-card {
+      background: #f9fbfd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .car-card h3 {
+      color: #004aad;
+      margin: 0 0 10px;
+    }
+
+    .car-card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .car-card small {
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming Cars in 2025</h1>
+    <p>See the most exciting new models coming soon</p>
+  </header>
+
+  <nav>
+    <a href="page1.html">Home</a>
+    <a href="Page02.html">All Cars</a>
+    <a href="page03.html">Car Detail</a>
+    <a href="page04.html">By Brand</a>
+    <a href="page05.html">By Type</a>
+    <a href="page06.html">Compare</a>
+    <a href="page07.html">Reviews</a>
+    <a href="page08.html">Buying Guide</a>
+    <a href="page09.html">Upcoming</a>
+    <a href="page10.html">Login</a>
+    <a href="page11.html">FAQ'S</a>
+  </nav>
+
+  <main>
+    <h2>Hot Upcoming Launches</h2>
+
+    <div class="car-grid">
+
+      <div class="car-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/11/Tesla-Roadster-103.jpg" alt="Tesla Roadster 2025" />
+        <h3>Tesla Roadster</h3>
+        <small>Expected: Late 2025</small>
+        <p>The highly anticipated electric supercar with 0-60 mph in under 2 seconds and 620-mile range.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="https://files.infernal.media/galeries/ford/2025/explorer/groupe-b/4.jpg" alt="Ford Explorer EV" />
+        <h3>Ford Explorer EV</h3>
+        <small>Expected: Early 2025</small>
+        <p>All-electric SUV with futuristic design and impressive range. Built for families and adventure.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="https://mediapool.bmwgroup.com/cache/P9/202309/P90523135/P90523135-the-bmw-i5-m60-xdrive-still-shot-10-2023-600px.jpg" alt="BMW i5" />
+        <h3>BMW i5</h3>
+        <small>Expected: Mid 2025</small>
+        <p>Luxury electric sedan from BMW offering power, performance, and sustainability in one elegant package.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="https://img.autocarindia.com/ExtraImages/20211118032718_image_from_ios_40_1.jpg?w=700&c=1" alt="Hyundai Ioniq 7" />
+        <h3>Hyundai Ioniq 7</h3>
+        <small>Expected: Q3 2025</small>
+        <p>A large all-electric SUV with advanced tech, 3-row seating, and modern aesthetics.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="https://media.wired.com/photos/64f7c231542c5d0935dca057/3:2/w_2560%2Cc_limit/Lamborghini-Lanzador-Drive-Featured-Gear.jpg" alt="Lamborghini Lanzador" />
+        <h3>Lamborghini Lanzador (EV)</h3>
+        <small>Expected: Late 2025</small>
+        <p>Lamborghini's first all-electric GT car. Futuristic styling with sharp lines and exotic performance.</p>
+      </div>
+
+      <div class="car-card">
+        <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/47137/purosangue-suv-exterior-right-front-three-quarter-14.jpeg?isig=0&q=80&q=80" alt="Ferrari Purosangue" />
+        <h3>Ferrari Purosangue</h3>
+        <small>Expected: 2025</small>
+        <p>Ferrari’s luxury SUV – powerful V12 engine, sporty handling, and the brand’s signature elegance.</p>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

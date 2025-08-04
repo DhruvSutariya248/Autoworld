@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cars By Type</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0; padding: 0;
+      background: #f0f3f7; color: #333;
+    }
+    header {
+      background: #004aad; color: white;
+      padding: 30px; text-align: center;
+    }
+    nav {
+      background: #003c8f; padding: 15px; text-align: center;
+    }
+    nav a {
+      color: white; text-decoration: none; margin: 0 15px; font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #003c8f;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .type-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .type-card {
+      background: #f4f6f9;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .type-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .type-card h3 {
+      color: #004aad;
+      margin-bottom: 8px;
+    }
+    .type-card p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cars by Type</h1>
+    <p>Explore different types of cars and their features</p>
+  </header>
+
+ <nav>
+    <a href="page1.html">Home</a>
+    <a href="Page02.html">All Cars</a>
+    <a href="page03.html">Car Detail</a>
+    <a href="page04.html">By Brand</a>
+    <a href="page05.html">By Type</a>
+    <a href="page06.html">Compare</a>
+    <a href="page07.html">Reviews</a>
+    <a href="page08.html">Buying Guide</a>
+    <a href="page09.html">Upcoming</a>
+    <a href="page10.html">Login</a>
+    <a href="page11.html">FAQ'S</a>
+  </nav>
+  <main>
+    <h2>Car Categories</h2>
+    <div class="type-list">
+
+      <div class="type-card">
+        <img src="https://www.carstudiomohali.com/wp-content/uploads/2023/11/Best-10-SUV-Cars-in-India-With-Prices-1.jpg" alt="SUV">
+        <h3>SUV</h3>
+        <p>Spacious and versatile. Great for families and off-road driving. Popular models: Toyota Highlander, Ford Explorer.</p>
+      </div>
+
+      <div class="type-card">
+        <img src="https://images.drivespark.com/webp/fit-in/510x383/car-image/car/3380673-hyundai_verna.jpg" alt="Sedan">
+        <h3>Sedan</h3>
+        <p>Comfortable and fuel-efficient. Ideal for daily commuting. Examples: Honda Accord, Toyota Camry.</p>
+      </div>
+
+      <div class="type-card">
+        <img src="https://www.usnews.com/object/image/00000191-d821-d8b8-adf7-f97944b10000/chevrolet-corvette-zr1-coupe-001.jpg?update-time=1725907944302&size=responsiveGallery&format=webp" alt="Sports Car">
+        <h3>Sports Car</h3>
+        <p>Built for speed and agility. Sleek design. Examples: Porsche 911, Ford Mustang.</p>
+      </div>
+
+      <div class="type-card">
+        <img src="https://pyxis.nymag.com/v1/imgs/df3/2f4/964355023c8621887c37e1fcc3c1dc3aa9-koeniggsegg-one1.2x.h473.w710.jpg" alt="Supercar">
+        <h3>Supercar</h3>
+        <p>High performance and luxury. Meant for enthusiasts. Examples: Lamborghini Revuelto, Ferrari SF90.</p>
+      </div>
+
+      <div class="type-card">
+        <img src="https://bdc2020.o0bc.com/wp-content/uploads/2014/04/FF_GrigioFerroMet-539.jpg" alt="Hatchback">
+        <h3>Hatchback</h3>
+        <p>Compact and city-friendly. Affordable and efficient. Examples: Suzuki Swift, Mini Cooper.</p>
+      </div>
+
+      <div class="type-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2025-tesla-model-s-1-672d42e172407.jpg?crop=0.465xw:0.466xh;0.285xw,0.361xh&resize=1200:*" alt="Electric Car">
+        <h3>Electric</h3>
+        <p>Zero-emission, quiet, and high-tech. Top models: Tesla Model 3, MG ZS EV.</p>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

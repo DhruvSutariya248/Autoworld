@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | AUTOWORLD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f3f7;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003c8f;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 26px;
+      color: #003c8f;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #004aad;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003c8f;
+    }
+    .success-message {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      display: none;
+    }
+  </style>
+</head>
+<body> 
+  <header>
+    <h1>Welcome to AUTOWORLD</h1>
+    <p>Find Your Perfect Ride – All the Details You Need in One Place </p>
+  </header>
+
+  <nav>
+    <a href="page1.html">Home</a>
+    <a href="Page02.html">All Cars</a>
+    <a href="page03.html">Car Detail</a>
+    <a href="page04.html">By Brand</a>
+    <a href="page05.html">By Type</a>
+    <a href="page06.html">Compare</a>
+    <a href="page07.html">Reviews</a>
+    <a href="page08.html">Buying Guide</a>
+    <a href="page09.html">Upcoming</a>
+    <a href="page10.html">Login</a>
+    <a href="page11.html">FAQ'S</a>
+  </nav>
+
+  <main>
+    <h2>Login Here to Be in Contact With Us</h2>
+    <form id="loginForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="success-message" id="successMessage">
+      Thank you for logging in, we will contact you soon!
+    </div>
+  </main>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const successMessage = document.getElementById('successMessage');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Simple validation (could be expanded)
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+
+      if (name && email && password && phone && address) {
+        // Display success message
+        successMessage.style.display = 'block';
+
+        // Optionally, reset form
+        loginForm.reset();
+      } else {
+        alert("Please fill out all fields.");
+      }
+    });
+  </script>
+</body>
+</html>

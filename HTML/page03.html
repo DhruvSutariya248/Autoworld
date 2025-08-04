@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Car Details | Multiple Models</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f3f7;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #003c8f;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #003c8f;
+      margin-bottom: 20px;
+    }
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .car-card {
+      background: #f4f6f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .car-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .car-card h3 {
+      color: #004aad;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .specs {
+      text-align: left;
+      font-size: 16px;
+      list-style: none;
+      padding-left: 0;
+    }
+    .specs li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Car Details - Various Models</h1>
+    <p>Explore specs for Sedan, SUV, Sports, and Supercar models</p>
+  </header>
+
+  <nav>
+    <a href="page1.html">Home</a>
+    <a href="Page02.html">All Cars</a>
+    <a href="page03.html">Car Detail</a>
+    <a href="page04.html">By Brand</a>
+    <a href="page05.html">By Type</a>
+    <a href="page06.html">Compare</a>
+    <a href="page07.html">Reviews</a>
+    <a href="page08.html">Buying Guide</a>
+    <a href="page09.html">Upcoming</a>
+    <a href="page10.html">Login</a>
+    <a href="page11.html">FAQ'S</a>
+  </nav>
+
+  <main>
+    <div class="car-list">
+      <!-- Sedan -->
+      <div class="car-card">
+        <img src="https://scene7.toyota.eu/is/image/toyotaeurope/COR0001a_25_WEB_CROP:Large-Landscape?ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=png-alpha" alt="Toyota Corolla 2023" />
+        <h3>Toyota Corolla 2023 (Sedan)</h3>
+        <ul class="specs">
+          <li><strong>Engine:</strong> 1.8L 4-Cylinder Hybrid</li>
+          <li><strong>Transmission:</strong> CVT Automatic</li>
+          <li><strong>Fuel Type:</strong> Petrol / Hybrid</li>
+          <li><strong>Mileage:</strong> 52 MPG (combined)</li>
+          <li><strong>Horsepower:</strong> 121 HP</li>
+          <li><strong>Price:</strong> $23,000</li>
+        </ul>
+      </div>
+
+      <!-- SUV -->
+      <div class="car-card">
+        <img src="https://www.topgear.com/sites/default/files/cars-car/image/2024/09/Toyota-RAV4-Hybrid-036.jpg?w=1280&h=720" alt="Toyota RAV4 2023" />
+        <h3>Toyota RAV4 2023 (SUV)</h3>
+        <ul class="specs">
+          <li><strong>Engine:</strong> 2.5L 4-Cylinder</li>
+          <li><strong>Transmission:</strong> 8-Speed Automatic</li>
+          <li><strong>Fuel Type:</strong> Petrol / Hybrid</li>
+          <li><strong>Mileage:</strong> 40 MPG (combined)</li>
+          <li><strong>Horsepower:</strong> 203 HP</li>
+          <li><strong>Price:</strong> $28,500</li>
+        </ul>
+      </div>
+
+      <!-- Sports -->
+      <div class="car-card">
+        <img src="https://live.dealer-asset.co/images/nz1044/news/mustang-012-1.jpg?s=1024" alt="Ford Mustang GT 2020" />
+        <h3>Ford Mustang GT 2020 (Sports)</h3>
+        <ul class="specs">
+          <li><strong>Engine:</strong> 5.0L V8</li>
+          <li><strong>Transmission:</strong> 6-Speed Manual</li>
+          <li><strong>Fuel Type:</strong> Petrol</li>
+          <li><strong>Mileage:</strong> 25 MPG (combined)</li>
+          <li><strong>Horsepower:</strong> 450 HP</li>
+          <li><strong>Price:</strong> $36,000</li>
+        </ul>
+      </div>
+
+      <!-- Supercar -->
+      <div class="car-card">
+        <img src="https://www.carblogindia.com/wp-content/uploads/2020/01/Lamborghini-Huracan-Evo-RWD-2.jpg" alt="Lamborghini Huracan EVO 2021" />
+        <h3>Lamborghini Huracan EVO 2021 (Supercar)</h3>
+        <ul class="specs">
+          <li><strong>Engine:</strong> 5.2L V10</li>
+          <li><strong>Transmission:</strong> 7-Speed Dual-Clutch</li>
+          <li><strong>Fuel Type:</strong> Petrol</li>
+          <li><strong>Mileage:</strong> 15 MPG (combined)</li>
+          <li><strong>Horsepower:</strong> 631 HP</li>
+          <li><strong>Price:</strong> $261,000</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
